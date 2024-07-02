@@ -1,24 +1,28 @@
 /* здесь используйте глобальные переменные */
-// Base Colors
-$color-black: #333333;
+// Текст
+$color-basic: #102654;
 $color-white: #ffffff;
-$color-gray: #bdbdbd;
-$color-primary: #7859cf;
-$color-secondary: #f0ebff;
+$text-accent: #103aae;
+$text-gradient-start: #d10a42;
+$text-gradient-end: #0041ca;
+$text-gradient: linear-gradient(128deg, $text-gradient-start 0%, $text-gradient-end 45.58%);
 
-// Alt Colors
-$primary-lighter: #9070ec;
-$primary-darker: #593cac;
-$light-grey: #e2e2e2;
+// form
+$color-error: #ff121f;
+
+// button
+$button-outline-white: #1c3374;
+$button-gradient-start: #ed0233;
+$button-gradient-end: #003eb7;
+$button-gradient: linear-gradient(97deg, $button-gradient-start 17.6%, $button-gradient-end 95.31%);
+$button-tabs: #d10a42;
 
 // Background Colors
-$lightest-grey: #f8f8f8;
-$flat-white: #f3ebe1;
-$lavender-latte: #eae6fc;
-$espresso: #e5e6e8;
-
-// hero button
-$primary-opacity: rgba(120, 89, 207, 0.25);
+$bg-extra: #f8f9fc;
+$bg-banners: #ed0233;
+$bg-hero-gradient: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$bg-footer: #030a1a;
+$bg-supplementary: #1c3374;
 
 // media
 $desktop-width: 1240px;

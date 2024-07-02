@@ -10,29 +10,19 @@ img {
   height: auto;
 }
 
+//  font-family: "Alumni Sans", sans-serif;
 html {
   min-width: 320px;
   min-height: 100%;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
-  line-height: 20px;
-  color: $color-black;
-  background-color: $lightest-grey;
-  font-weight: 400;
+  line-height: 22px;
+  color: $color-basic;
+  background-color: $color-white;
+  font-weight: 300;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0;
-}
-
-main {
-  flex-grow: 1;
 }
