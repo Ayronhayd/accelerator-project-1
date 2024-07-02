@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>SUPERGYM</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/style.scss">
-    <link rel="preload" href="/source/fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/source/fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/source/fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/source/fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/source/fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>SUPERGYM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="/source/fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<!-- пример использования спрайта -->
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg> -->
+<body class="page-body">
+  <section data-test="hero">
+    <h1>ФИТНЕС ЦЕНТР</h1>
+  </section>
+  <main class="page-main" data-test="about">
+    <h2>Тренажёрный зал</h2>
+  </main>
+  <section data-test="price">
+    <h2>Абонементы</h2>
+  </section>
+  <article data-test="games">
+    <h2>SUPER GAMES</h2>
+  </article>
+  <section data-test="juri">
+    <h2>Жюри</h2>
+  </section>
+  <section data-test="features">
+    <h2>Наши преимущества</h2>
+  </section>
+  <article data-test="offers">offers</article>
+  <section data-test="faq">
+    <h2>Вопросы и ответы</h2>
+  </section>
+  <div data-test="reviews">
+    <h2>Отзывы</h2>
+  </div>
+  <div data-test="form">
+    <section>
+      <h2>Бесплатное занятие</h2>
+    </section>
+    <section>
+      <h2>Контакты</h2>
+    </section>
+  </div>
+  <footer data-test="footer">footer</footer>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
