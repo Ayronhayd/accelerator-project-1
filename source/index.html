@@ -24,9 +24,28 @@
     <use href="/__spritemap#sprite-user"></use>
   </svg> -->
 <body class="page-body">
-  <section data-test="hero">
-    <h1>ФИТНЕС ЦЕНТР</h1>
+
+  <section class="hero" data-test="hero">
+
+    <header class="hero__header">
+            <img class="hero__logo logo" src="/__spritemap#sprite-logo" width="32" height="36" alt="Логотип Drink2Go.">
+            <a class="hero__phone" href="tel:+88005555555">8 800 555-55-55</a>
+    </header>
+
+    <div class="hero__wrapper">
+      <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
+      <span class="hero">Омск</span>
+      <h1 class="hero__title title">Фитнес центр</h1>
+      <button class="hero__button button button--hero" type="button">Купить абонемент</button>
+    </div>
+
+    <img class="hero__img" src="img/hero-img.jpg" width="32" height="36" alt="Логотип Drink2Go.">
+
   </section>
+
+
+
+
   <main class="page-main" data-test="about">
     <h2>Тренажёрный зал</h2>
   </main>
@@ -42,7 +61,9 @@
   <section data-test="features">
     <h2>Наши преимущества</h2>
   </section>
-  <article data-test="offers">offers</article>
+  <article data-test="offers">
+    <h2>Акции</h2>
+  </article>
   <section data-test="faq">
     <h2>Вопросы и ответы</h2>
   </section>

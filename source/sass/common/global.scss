@@ -6,15 +6,20 @@
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
-//  font-family: "Alumni Sans", sans-serif;
+a {
+  text-decoration: none;
+}
+
 html {
   min-width: 320px;
   min-height: 100%;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $font-family;
   font-size: 14px;
   line-height: 22px;
   color: $color-basic;

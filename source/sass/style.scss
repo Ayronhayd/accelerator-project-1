@@ -1,6 +1,4 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
 
 /* GLOBAL */
@@ -10,3 +8,8 @@
 @import "./common/global";
 @import "./common/visually-hidden";
 @import "./common/container";
+
+/* BLOCKS */
+@import "./blocks/hero";
+@import "./blocks/logo";
+@import "./blocks/button";
