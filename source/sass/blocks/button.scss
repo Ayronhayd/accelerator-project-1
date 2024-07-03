@@ -3,6 +3,7 @@
   font-family: $font-family;
   background-color: transparent;
   cursor: pointer;
+  
 
 
   &--hero {
@@ -11,8 +12,9 @@
     font-weight: 700;
     line-height: 12px;
     text-transform: uppercase;
-    color: $color-basic;
-    border: 2px solid $color-basic;
+    color: $color-white;
     background-color: transparent;
+    border: 2px solid $color-white;
+    padding: 22px;
   }
 }

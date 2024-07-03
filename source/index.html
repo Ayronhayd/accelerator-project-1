@@ -1,3 +1,8 @@
+<!-- пример использования спрайта -->
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg> -->
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
@@ -5,41 +10,43 @@
   <meta charset="UTF-8">
   <title>SUPERGYM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Омск фитнес центр">
+
+  <link rel="preload" href="/fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="sass/style.scss">
-  <link rel="preload" href="/source/fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="/source/fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="/source/fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="/source/fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
-  <link rel="preload" href="/source/fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
 </head>
 
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
 <body class="page-body">
 
   <section class="hero" data-test="hero">
 
-    <header class="hero__header">
-            <img class="hero__logo logo" src="/__spritemap#sprite-logo" width="32" height="36" alt="Логотип Drink2Go.">
-            <a class="hero__phone" href="tel:+88005555555">8 800 555-55-55</a>
-    </header>
+    <div class="hero__container container">
 
-    <div class="hero__wrapper">
-      <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
-      <span class="hero">Омск</span>
-      <h1 class="hero__title title">Фитнес центр</h1>
-      <button class="hero__button button button--hero" type="button">Купить абонемент</button>
+      <header class="hero__header">
+        <img class="hero__logo logo" src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+        <a class="hero__phone" href="tel:+88005555555">8 800 555-55-55</a>
+      </header>
+
+
+      <div class="hero__wrapper-content">
+        <div class="hero__wrapper">
+          <p class="hero__text">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <h1 class="hero__title">
+            <span class="hero__span">Омск</span>
+            Фитнес центр
+          </h1>
+          <button class="hero__button button button--hero" type="button">Купить абонемент</button>
+        </div>
+        <img class="hero__img" src="img/hero-img.jpg" width="324" height="390" alt="супертренер.">
+      </div>
+
+
+
     </div>
-
-    <img class="hero__img" src="img/hero-img.jpg" width="32" height="36" alt="Логотип Drink2Go.">
 
   </section>
 

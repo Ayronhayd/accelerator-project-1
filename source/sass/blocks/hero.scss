@@ -1,3 +1,129 @@
 .hero {
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 }
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  gap: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+}
+
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 18px;
+
+  @media (min-width: $tablet-width) {}
+}
+
+.hero__phone {
+  text-decoration: none;
+  color: $color-white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.hero__wrapper-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero__wrapper {
+  display: grid;
+  grid-template-columns: 113px 156px;
+  gap: 47px 21px;
+
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 113px 185px;
+    gap: 50px 26px;
+    padding-bottom: 31px;
+  }
+}
+
+.hero__text {
+  color: $color-white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+
+  margin: 0;
+  align-self: flex-end;
+  grid-column: 1;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+    grid-column: 1;
+    align-self: center;
+  }
+}
+
+.hero__span {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: none;
+
+  margin: 0;
+  display: block;
+  margin-bottom: 13px;
+  letter-spacing: 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+.hero__title {
+  font-family: $font-extra;
+  color: $color-white;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 62px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+    grid-column: 2;
+  }
+}
+
+.hero__img {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 324px;
+    height: 390px;
+    grid-column: 3;
+  }
+}
+
+.hero__button {
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+  }
+}
