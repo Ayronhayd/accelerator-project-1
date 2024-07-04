@@ -4,7 +4,6 @@
   background-color: transparent;
   cursor: pointer;
 
-
   &--hero {
     font-family: $font-family;
     font-size: 12px;
@@ -15,9 +14,18 @@
     background-color: transparent;
     border: 2px solid $color-white;
     padding: 22px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
 
     @media (min-width: $tablet-width) {
       padding: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 25px;
     }
   }
 

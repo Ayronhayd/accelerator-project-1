@@ -23,14 +23,11 @@
 <body class="page-body">
 
   <section class="hero" data-test="hero">
-
     <div class="hero__container container">
-
       <header class="hero__header">
         <img class="hero__logo logo" src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
         <a class="hero__phone" href="tel:+88005555555">8 800 555-55-55</a>
       </header>
-
 
       <div class="hero__wrapper-content">
         <div class="hero__wrapper">
@@ -39,7 +36,7 @@
             <span class="hero__span">Омск</span>
             Фитнес центр
           </h1>
-          <button class="hero__button button button--hero" type="button">Купить абонемент</button>
+          <a class="hero__button button button--hero" href="#subscriptions" type="button">Купить абонемент</a>
         </div>
 
         <picture>
@@ -49,24 +46,34 @@
             srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x">
           <source type="image/png" width="500" height="524" media="(min-width: 1366px)"
             srcset="./img/hero-desctop.jpg 1x, ./img/hero-desctop@2x.jpg 2x">
-          <img class="hero__img" src="img/hero-tablet.jpg"
-            srcset="./img/hero-tablet@2x.jpg" width="324" height="390" alt="супертренер.">
+          <img class="hero__img" src="img/hero-tablet.jpg" srcset="./img/hero-tablet@2x.jpg" width="324" height="390"
+            alt="супертренер.">
         </picture>
       </div>
-
-
-
     </div>
-
   </section>
 
-
-
-
   <main class="page-main" data-test="about">
-    <h2>Тренажёрный зал</h2>
+
+    <h2 class="title">Тренажёрный зал</h2>
+
+    <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+      Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+    </p>
+
+    <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть
+      несколько оборудованных залов для различных видов групповых занятий.</p>
+
+      <img src="" alt="">
+
+      <iframe src="" frameborder="0"></iframe>
   </main>
-  <section data-test="price">
+
+
+
+
+
+  <section data-test="price" id="subscriptions">
     <h2>Абонементы</h2>
   </section>
   <article data-test="games">
