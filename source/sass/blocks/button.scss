@@ -3,7 +3,6 @@
   font-family: $font-family;
   background-color: transparent;
   cursor: pointer;
-  
 
 
   &--hero {
@@ -16,5 +15,32 @@
     background-color: transparent;
     border: 2px solid $color-white;
     padding: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding: 20px;
+    }
+  }
+
+  &:hover {
+    color: $text-accent;
+    background-color: $color-white;
+  }
+
+  &:focus {
+    color: $text-accent;
+    background-color: rgba($color-white, 0.8);
+    border: 2px solid #000000;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-basic;
+    background-color: $color-white;
+    outline: none;
+    border: 2px solid $color-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
