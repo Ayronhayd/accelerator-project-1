@@ -41,68 +41,108 @@
 
         <picture>
           <source type="image/webp" width="500" height="524" media="(min-width: 1366px)"
-            srcset="./img/hero-desctop.webp 1x, ./img/hero-desctop@2x.webp 2x">
+            srcset="./img/hero/hero-desctop.webp 1x, ./img/hero/hero-desctop@2x.webp 2x">
           <source type="image/webp" width="324" height="390"
-            srcset="./img/hero-tablet.webp 1x, ./img/hero-tablet@2x.webp 2x">
+            srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
           <source type="image/png" width="500" height="524" media="(min-width: 1366px)"
-            srcset="./img/hero-desctop.jpg 1x, ./img/hero-desctop@2x.jpg 2x">
-          <img class="hero__img" src="img/hero-tablet.jpg" srcset="./img/hero-tablet@2x.jpg" width="324" height="390"
-            alt="супертренер.">
+            srcset="./img/hero/hero-desctop.jpg 1x, ./img/hero/hero-desctop@2x.jpg 2x">
+          <img class="hero__img" src="./img/hero/hero/hero-tablet.jpg" srcset="./img/hero/hero-tablet@2x.jpg"
+            width="324" height="390" alt="супертренер.">
         </picture>
       </div>
     </div>
   </section>
 
-  <main class="page-main" data-test="about">
+  <main class="page-main">
 
-    <h2 class="title">Тренажёрный зал</h2>
+    <section class="about" data-test="about">
+      <div class="u">
+        <h2 class="about__title title">Тренажёрный зал</h2>
+        <p class="about__titled">Просторный зал площадью 900 кв/м</p>
+        <div class="about__text">
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+      </div>
+      <div class="about__img">
+        <picture>
+          <source type="image/webp" width="660" height="400" media="(min-width: 1366px)"
+            srcset="./img/about/about-desctop.webp 1x, ./img/about/about-desctop@2x.webp 2x">
+          <source type="image/webp" width="678" height="345" media="(min-width: 768px)"
+            srcset="./img/about/about-tablet.webp 1x, ./img/about/video-tablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="280"
+            srcset="./img/about/about-mobil.webp 1x, ./img/about/about-mobil@2x.webp 2x">
+          <source type="image/png" width="660" height="400" media="(min-width: 1366px)"
+            srcset="./img/about/about-desctop.jpg 1x, ./img/about/about-desctop@2x.jpg  2x">
+          <source type="image/png" width="678" height="345" media="(min-width: 768px)"
+            srcset="./img/about/about-tablet.jpg 1x, ./img/about/video-tablet@2x.jpg 2x">
+          <img class="hero__image" src="./img/about/about-mobil.jpg" srcset="./img/about/about-mobil@2x.jpg" width="320"
+            height="280" alt="Тренажёрный зал.">
+        </picture>
+      </div>
+      </div>
 
-    <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-      Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-    </p>
+      <div class="about__container video"
+        data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=TZ0KEWYYlFsPh4yK?from_block=partner&from=zen&mute=1&autoplay=1&tv=0">
+        <div class="video__wrapper">
 
-    <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть
-      несколько оборудованных залов для различных видов групповых занятий.</p>
+          <button class="video__play" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+            <svg class="video__play-icon" width="9" height="12">
+              <use href="/__spritemap#sprite-play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
 
-      <img src="" alt="">
 
-      <iframe src="" frameborder="0"></iframe>
+
+
+    <section data-test="price" id="subscriptions">
+      <h2>Абонементы</h2>
+    </section>
+    <article data-test="games">
+      <h2>SUPER GAMES</h2>
+    </article>
+    <section data-test="juri">
+      <h2>Жюри</h2>
+    </section>
+    <section data-test="features">
+      <h2>Наши преимущества</h2>
+    </section>
+    <article data-test="offers">
+      <h2>Акции</h2>
+    </article>
+    <section data-test="faq">
+      <h2>Вопросы и ответы</h2>
+    </section>
+    <div data-test="reviews">
+      <h2>Отзывы</h2>
+    </div>
+    <div data-test="form">
+      <section>
+        <h2>Бесплатное занятие</h2>
+      </section>
+      <section>
+        <h2>Контакты</h2>
+      </section>
+    </div>
+
+
   </main>
 
 
 
 
 
-  <section data-test="price" id="subscriptions">
-    <h2>Абонементы</h2>
-  </section>
-  <article data-test="games">
-    <h2>SUPER GAMES</h2>
-  </article>
-  <section data-test="juri">
-    <h2>Жюри</h2>
-  </section>
-  <section data-test="features">
-    <h2>Наши преимущества</h2>
-  </section>
-  <article data-test="offers">
-    <h2>Акции</h2>
-  </article>
-  <section data-test="faq">
-    <h2>Вопросы и ответы</h2>
-  </section>
-  <div data-test="reviews">
-    <h2>Отзывы</h2>
-  </div>
-  <div data-test="form">
-    <section>
-      <h2>Бесплатное занятие</h2>
-    </section>
-    <section>
-      <h2>Контакты</h2>
-    </section>
-  </div>
-  <footer data-test="footer">footer</footer>
+
+  <footer data-test="footer">
+
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 

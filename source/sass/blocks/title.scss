@@ -1,0 +1,20 @@
+.title {
+  margin: 0;
+  color: $color-basic;
+  font-family: $font-extra;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    text-align: start;
+  }
+}

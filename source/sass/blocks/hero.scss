@@ -70,10 +70,9 @@
 }
 
 .hero__wrapper-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 
@@ -86,7 +85,7 @@
 
 .hero__wrapper {
   display: grid;
-  grid-template-columns: 113px 156px;
+  grid-template-columns: 113px 1fr;
   gap: 47px 21px;
 
 
