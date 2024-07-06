@@ -2,9 +2,6 @@
   display: flex;
   padding: 40px 0;
   flex-direction: column;
-  align-items: center;
-  gap: 36px;
-
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px 120px;
@@ -20,12 +17,22 @@
   }
 }
 
+.about__wrapper {
+  padding: 0 15px 36px;
+}
+
+.about__title {
+  padding-bottom: 12px;
+}
+
 .about__titled {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   color: $color-basic;
+  padding-bottom: 36px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -47,6 +54,7 @@
     line-height: 22px;
     color: $color-basic;
 
+
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 24px;
@@ -65,4 +73,8 @@
       display: block;
     }
   }
+}
+
+.about__img {
+  padding-bottom: 29px;
 }

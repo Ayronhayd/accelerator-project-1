@@ -1,3 +1,36 @@
+.video {
+  position: relative;
+  width: 320px;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+    image-set(url("../../img/about/video-mobil.webp") 1x type("image/webp"),
+      url("../../img/about/video-mobil@2x.webp") 2x type("image/webp"),
+      url("../../img/about/video-mobil.jpg") 1x type("image/jpeg"),
+      url("../../img/about/video-mobil@2x.jpg") 2x type("image/jpeg"));
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    height: 170px;
+    background-image:
+      image-set(url("../../img/about/video-tablet.webp") 1x type("image/webp"),
+        url("../../img/about/video-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/about/video-tablet.jpg") 1x type("image/jpeg"),
+        url("../../img/about/video-tablet@2x.jpg") 2x type("image/jpeg"));
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+    background-image:
+      image-set(url("../../img/about/video-desctop.webp") 1x type("image/webp"),
+        url("../../img/about/video-desctop@2x.webp") 2x type("image/webp"),
+        url("../../img/about/video-desctop.jpg") 1x type("image/jpeg"),
+        url("../../img/about/video-desctop@2x.jpg") 2x type("image/jpeg"));
+  }
+}
+
 .video__play {
   position: absolute;
   top: 0;
@@ -6,9 +39,46 @@
   height: 100%;
   cursor: pointer;
   border: 0;
-  opacity: 1;
+  background-color: transparent;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 72px;
+    height: 72px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    outline: 2px solid rgba($button-gradient-start, 0.2);
+    outline-offset: -2px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    background: $button-gradient;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 }
 
-.video__wrapper {
-  position: relative;
+.video__play-icon {
+  color: $color-white;
+  position: absolute;
+  transform: translate(-30%, -50%);
+  align-self: center;
+  width: 9px;
+  height: 12px;
+}
+
+.video__iframe {
+  position: absolute;
+  z-index: 2;
 }

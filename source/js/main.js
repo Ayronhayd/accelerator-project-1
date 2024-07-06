@@ -12,6 +12,5 @@ button.addEventListener('click', () => {
   if (video.classList.contains('video__iframe')) {
     return;
   }
-  video.classList.add('video__iframe');
-  video.insertAdjacentHTML('afterbegin', `<iframe class="video__iframe" src="${src}" title="video" frameborder="1" allow="autoplay"; allowfullscreen></iframe>`);
+  video.insertAdjacentHTML('afterbegin', `<iframe class="video__iframe" src="${src}" width="100%" height="100%" title="video" allowfullscreen></iframe>`);
 });
