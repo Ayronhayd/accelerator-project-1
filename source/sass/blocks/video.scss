@@ -84,6 +84,43 @@
       height: 72px;
     }
   }
+
+  &:hover::after {
+    background-color: $color-white;
+    outline-color: rgba($color-basic, 0.6);
+  }
+
+  &:focus::after {
+    background-color: #c8c9cc;
+    outline-color: $color-basic;
+  }
+
+  &:active::after {
+    background-color: $color-white;
+    outline-color: $color-basic;
+  }
+
+  &:hover .video__play-icon {
+    color: rgba($color-basic, 0.6);
+  }
+
+  &:focus .video__play-icon {
+    color: $color-basic;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:disabled::after {
+    background: $color-white;
+    outline-color: rgba($color-basic, 0.4);
+    opacity: 1;
+  }
+
+  &:disabled .video__play-icon {
+    color: rgba($color-basic, 0.4);
+  }
 }
 
 .video__play-icon {
@@ -94,6 +131,7 @@
   transform: translate(-30%, -50%);
   width: 9px;
   height: 12px;
+  z-index: 1;
 
   @media (min-width: $desktop-width) {
     width: 17px;

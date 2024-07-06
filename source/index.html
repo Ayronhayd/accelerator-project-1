@@ -56,17 +56,19 @@
   <main class="page-main">
 
     <section class="about" data-test="about">
-        <div class="about__wrapper">
-          <h2 class="about__title title">Тренажёрный зал</h2>
-          <p class="about__titled">Просторный зал площадью 900 кв/м</p>
-          <div class="about__text">
-            <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья.
-              Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-            </p>
-            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажёрами. Также в&nbsp;фитнес центре есть
-              несколько оборудованных залов <br> для различных видов групповых занятий.</p>
-          </div>
+      <div class="about__wrapper">
+        <h2 class="about__title title">Тренажёрный зал</h2>
+        <p class="about__titled">Просторный зал площадью 900 кв/м</p>
+        <div class="about__text">
+          <p>Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+            и&nbsp;здоровья.
+            Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажёрами. Также
+            в&nbsp;фитнес центре есть
+            несколько оборудованных залов <br>для различных видов групповых занятий.</p>
         </div>
+      </div>
       <div class="about__img">
         <picture>
           <source type="image/webp" width="660" height="400" media="(min-width: 1366px)"
@@ -98,10 +100,98 @@
 
 
 
+    <section class="price" data-test="price">
+      <h2 class="price__title title">Абонементы</h2>
+      <div class="price__wrap">
 
-    <section data-test="price" id="subscriptions">
-      <h2>Абонементы</h2>
+        <input class="price__tab" type="radio" id="tab-1" name="tab" checked>
+        <label for="tab-1">1 месяц</label>
+
+        <input class="price__tab" type="radio" id="tab-2" name="tab">
+        <label for="tab-2">6 месяцев</label>
+
+        <input class="price__tab" type="radio" id="tab-3" name="tab">
+        <label for="tab-3">12 месяцев</label>
+
+        <div class="price__content">
+          <ul class="price__list">
+
+            <li class="price__item">
+              <h3 class="price__titled">С тренером</h3>
+              <p class="price__time">12 занятий</p>
+              <p class="price__cost">
+                5000
+                <span class="price__rub">
+                </span>
+              </p>
+              <a class="price__button button-light" href="#">Купить абонемент</a>
+            </li>
+
+            <li class="price__item">
+              <h3 class="price__titled">Дневной</h3>
+              <p class="price__time">с 8:00 до 17:00</p>
+              <p class="price__cost">
+                1700
+                <span class="price__rub">
+                </span>
+              </p>
+              <a class="price__button button-light" href="#">Купить абонемент</a>
+            </li>
+
+            <li class="price__item">
+              <h3 class="price__titled">Полный день</h3>
+              <p class="price__time">с 8:00 до 22:00</p>
+              <p class="price__cost">
+                2700
+                <span class="price__rub">
+                </span>
+              </p>
+              <a class="price__button button-light" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="price__content">
+          <h3>Medium Section</h3>
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis
+            pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit.
+            Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit
+            viverra.</p>
+        </div>
+
+        <div class="price__content">
+          <h3>Long Section</h3>
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis
+            pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit.
+            Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit
+            viverra.</p>
+
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis
+            pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit.
+            Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit
+            viverra.</p>
+        </div>
+
+      </div>
+
+
+
+
     </section>
+
+
+
+
     <article data-test="games">
       <h2>SUPER GAMES</h2>
     </article>
