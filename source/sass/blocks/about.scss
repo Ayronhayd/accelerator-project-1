@@ -5,24 +5,35 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px 120px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 355px 1fr;
     padding: 120px 103px 240px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0;
+    gap: 145px;
   }
 }
 
 .about__wrapper {
   padding: 0 15px 36px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .about__title {
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+  }
 }
 
 .about__titled {
@@ -44,10 +55,19 @@
     font-size: 22px;
     line-height: 22px;
     text-align: start;
+    padding-bottom: 94px;
   }
 }
 
 .about__text {
+  @media (min-width: $tablet-width) {
+    padding: 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   p {
     margin: 0;
     font-size: 14px;
@@ -63,6 +83,7 @@
 
     @media (min-width: $desktop-width) {
       text-align: start;
+      padding-bottom: 8px;
     }
   }
 
@@ -76,5 +97,6 @@
 }
 
 .about__img {
+  margin: 0 auto;
   padding-bottom: 29px;
 }
