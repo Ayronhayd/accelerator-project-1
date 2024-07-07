@@ -18,6 +18,9 @@ $max-tab-count: 3;
 
   @media (min-width: $desktop-width) {
     padding: 100px 103px;
+    margin: 0 auto;
+    background-size: 487px 493px;
+    background-position: calc(122% - 18px) calc(117% - 3px);
   }
 }
 
@@ -46,7 +49,7 @@ $max-tab-count: 3;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 217px 1fr;
+    grid-template-columns: 471px 188px 1fr;
   }
 }
 
@@ -100,7 +103,7 @@ $max-tab-count: 3;
         margin-left: 35px;
 
         @media (min-width: $desktop-width) {
-          margin-left: 300px;
+          margin-left: auto;
         }
       }
 
@@ -112,7 +115,7 @@ $max-tab-count: 3;
         margin-right: 35px;
 
         @media (min-width: $desktop-width) {
-          margin-right: 300px;
+          margin-right: auto;
         }
       }
     }
@@ -120,6 +123,8 @@ $max-tab-count: 3;
     @media (min-width: $desktop-width) {
       font-size: 20px;
       line-height: 20px;
+      margin-bottom: 40px;
+      padding-bottom: 8px;
     }
 
     &:hover {
@@ -148,6 +153,7 @@ $max-tab-count: 3;
   flex-direction: column;
   gap: 36px;
   background-color: $bg-extra;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     gap: 40px;
@@ -155,6 +161,7 @@ $max-tab-count: 3;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -163,6 +170,10 @@ $max-tab-count: 3;
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
+    padding: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 65px;
   }
 }
@@ -183,6 +194,8 @@ $max-tab-count: 3;
   @media (min-width: $desktop-width) {
     font-size: 26px;
     line-height: 26px;
+    margin-bottom: 17px;
+    min-width: 230px;
   }
 }
 
@@ -195,6 +208,10 @@ $max-tab-count: 3;
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -215,6 +232,10 @@ $max-tab-count: 3;
     line-height: 90px;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .price__cost[data-shadow]::after {
@@ -234,6 +255,12 @@ $max-tab-count: 3;
     line-height: 150px;
     top: 2px;
     left: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-81px, -75px);
   }
 }
 
