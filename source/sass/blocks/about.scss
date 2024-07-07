@@ -5,14 +5,14 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px 120px;
+    padding: 60px 45px 85px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 355px 1fr;
-    padding: 120px 103px 240px;
+    padding: 120px 103px 204px;
     gap: 145px;
   }
 }
