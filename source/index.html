@@ -137,7 +137,7 @@
             <li class="price__item">
               <h3 class="price__titled">Полный день</h3>
               <p class="price__time">с 8:00 до 22:00</p>
-              <p class="price__cost" data-shadow="2700">
+              <p class="price__cost"  data-shadow="2700">
                 2700
                 <span class="price__rub"></span>
               </p>
@@ -224,21 +224,36 @@
     </section>
 
 
-    <article data-test="games">
-      <div>
-        <h2>SUPER GAMES</h2>
-        <div>
-          <span>Дата</span>
-          <span>7</span>
-          <span>Марта</span>
-          <span>2019</span>
-          <span>Время</span>
-          <span>12:00</span>
+    <article class="games container" data-test="games">
+      <div class="games__wrapper">
+        <h2 class="games__title">SUPER <br> GAMES</h2>
+        <div class="games__conteiner">
+          <span class="games__date-time">Дата</span>
+          <span class="games__number">7</span>
+          <span class="games__month-year">Марта 2019</span>
+          <span class="games__date-time">Время</span>
+          <span class="games__number">12:00</span>
         </div>
-        <p>Ежегодные соревнования по CrossFit</p>
-        <a href="#">заполнить заявку</a>
+        <p class="games__text">Ежегодные соревнования по&nbsp;CrossFit</p>
+        <a class="button button--games" href="#">заполнить заявку</a>
       </div>
-      <img src="#" width="290" height="290" alt="#">
+      <div class="games__img">
+        <picture>
+            <source type="image/webp" width="660" height="500" media="(min-width: 1366px)"
+            srcset="./img/games/games-desctop.webp 1x, ./img/games/games-desctop@2x.webp 2x">
+            <source type="image/webp" width="378" height="348" media="(min-width: 768px)"
+            srcset="./img/games/games-tablet.webp 1x, ./img/games/games-tablet@2x.webp 2x">
+            <source type="image/webp" width="290" height="290"
+            srcset="./img/games/games-mobil.webp 1x, ./img/games/games-mobil@2x.webp 2x">
+
+            <source type="image/jpeg" width="660" height="500" media="(min-width: 1366px)"
+            srcset="./img/games/games-desctop.jpg 1x, ./img/games/games-desctop@2x.jpg 2x">
+            <source type="image/jpeg" width="378" height="348" media="(min-width: 768px)"
+            srcset="./img/games/games-tablet.jpg 1x, ./img/games/games-tablet@2x.jpg 2x">
+            <img class="hero__img" src="./img/games/games-mobil.jpg" srcset="./img/games/games-mobil@2x.jpg"
+            width="290" height="290" alt="супертренер.">
+        </picture>
+      </div>
 
     </article>
     <section data-test="juri">

@@ -9,27 +9,9 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
-  align-self: center;
-
-  &--primary {
-    color: $color-white;
-    background-color: transparent;
-    border: 2px solid $color-white;
-
-    @media (min-width: $tablet-width) {
-      padding: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 25px;
-    }
-  }
-
-  &--light {
-    color: $color-basic;
-    border: 2px solid $color-basic;
-    padding: 26px 20px 24px;
-  }
+  border: 2px solid $color-white;
+  color: $color-white;
+  background-color: transparent;
 
   &:hover {
     color: $text-accent;
@@ -50,7 +32,56 @@
     border: 2px solid $color-white;
   }
 
-  &:disabled {
-    opacity: 0.5;
+  @media (min-width: $tablet-width) {
+    padding: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
+
+  &--light {
+    color: $color-basic;
+    border: 2px solid $color-basic;
+    padding: 26px 20px 24px;
+
+    &:hover {
+      border: 2px solid transparent;
+      border-image: $button-gradient;
+      border-image-slice: 1;
+      color: $color-white;
+      background: $button-gradient;
+    }
+
+    &:focus {
+      color: $color-white;
+      background: linear-gradient(97deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+      border: 2px solid #000000;
+      outline: none;
+    }
+
+    &:active {
+      border: 2px solid transparent;
+      border-image: $button-gradient;
+      border-image-slice: 1;
+      color: $color-white;
+      opacity: 0.6;
+      outline: none;
+      background: $button-gradient;
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.button--light-disabled {
+  color: $color-basic;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.3;
+  background-color: $color-white;
 }
