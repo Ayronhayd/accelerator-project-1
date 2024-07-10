@@ -103,13 +103,13 @@
       <div class="price__wrapper">
 
         <input class="price__tab" type="radio" id="tab-1" name="tab" checked>
-        <label for="tab-1"  tabindex="0">1 месяц</label>
+        <label for="tab-1" tabindex="0">1 месяц</label>
 
         <input class="price__tab" type="radio" id="tab-2" name="tab">
-        <label for="tab-2"  tabindex="0">6 месяцев</label>
+        <label for="tab-2" tabindex="0">6 месяцев</label>
 
         <input class="price__tab" type="radio" id="tab-3" name="tab">
-        <label for="tab-3"  tabindex="0">12 месяцев</label>
+        <label for="tab-3" tabindex="0">12 месяцев</label>
 
         <div class="price__content">
           <ul class="price__list">
@@ -137,7 +137,7 @@
             <li class="price__item">
               <h3 class="price__titled">Полный день</h3>
               <p class="price__time">с 8:00 до 22:00</p>
-              <p class="price__cost"  data-shadow="2700">
+              <p class="price__cost" data-shadow="2700">
                 2700
                 <span class="price__rub"></span>
               </p>
@@ -210,7 +210,7 @@
               <p class="price__time">с 8:00 до 22:00</p>
               <p class="price__cost" data-shadow="32400">
                 32400
-               <span class="price__rub"></span>
+                <span class="price__rub"></span>
               </p>
               <a class="price__button button button--light" href="#">Купить абонемент</a>
             </li>
@@ -223,42 +223,119 @@
 
     </section>
 
-
     <article class="games container" data-test="games">
       <div class="games__wrapper">
         <h2 class="games__title">SUPER <br> GAMES</h2>
         <div class="games__conteiner">
-          <span class="games__date-time">Дата</span>
-          <span class="games__number">7</span>
-          <span class="games__month-year">Марта 2019</span>
-          <span class="games__date-time">Время</span>
-          <span class="games__number">12:00</span>
+          <p class="games__date-time">
+            Дата
+            <span class="games__number">7</span>
+            <span class="games__month-year">Марта <br> 2019</span>
+          </p>
+
+          <p class="games__date-time">
+            Время
+            <span class="games__number">12:00</span>
+          </p>
+
+
         </div>
         <p class="games__text">Ежегодные соревнования по&nbsp;CrossFit</p>
         <a class="button button--games" href="#">заполнить заявку</a>
       </div>
       <div class="games__img">
         <picture>
-            <source type="image/webp" width="660" height="500" media="(min-width: 1366px)"
+          <source type="image/webp" width="660" height="500" media="(min-width: 1366px)"
             srcset="./img/games/games-desctop.webp 1x, ./img/games/games-desctop@2x.webp 2x">
-            <source type="image/webp" width="378" height="348" media="(min-width: 768px)"
+          <source type="image/webp" width="378" height="348" media="(min-width: 768px)"
             srcset="./img/games/games-tablet.webp 1x, ./img/games/games-tablet@2x.webp 2x">
-            <source type="image/webp" width="290" height="290"
+          <source type="image/webp" width="290" height="290"
             srcset="./img/games/games-mobil.webp 1x, ./img/games/games-mobil@2x.webp 2x">
 
-            <source type="image/jpeg" width="660" height="500" media="(min-width: 1366px)"
+          <source type="image/jpeg" width="660" height="500" media="(min-width: 1366px)"
             srcset="./img/games/games-desctop.jpg 1x, ./img/games/games-desctop@2x.jpg 2x">
-            <source type="image/jpeg" width="378" height="348" media="(min-width: 768px)"
+          <source type="image/jpeg" width="378" height="348" media="(min-width: 768px)"
             srcset="./img/games/games-tablet.jpg 1x, ./img/games/games-tablet@2x.jpg 2x">
-            <img class="games__img" src="./img/games/games-mobil.jpg" srcset="./img/games/games-mobil@2x.jpg"
-            width="290" height="290" alt="спортсмен в магнезии.">
+          <img class="games__img" src="./img/games/games-mobil.jpg" srcset="./img/games/games-mobil@2x.jpg" width="290"
+            height="290" alt="спортсмен в магнезии.">
         </picture>
       </div>
 
     </article>
-    <section data-test="juri">
-      <h2>Жюри</h2>
+
+    <section class="juri" data-test="juri">
+      <h2 class="juri__title title">Жюри</h2>
+
+
+      <div class="juri__swiper swiper">
+
+        <div class="juri__wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="juri__slide swiper-slide">
+            <h3 class="swiper__name">Анна Павлова</h3>
+            <p class="swiper__fit">CrossFit</p>
+            <ul class="swiper__list">
+              <li class="swiper__item">Certified Level 3 Trainer</li>
+              <li class="swiper__item">Победитель чемпионата России по CrossFit</li>
+              <li class="swiper__item">Опыт — 6 лет</li>
+            </ul>
+            <div class="swiper__img">
+              <picture>
+                <source type="image/webp" width="260" height="300"
+                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x">
+                <img class="swiper__image" src="./img/juri/anna-pavlova.jpg" srcset="./img/juri/anna-pavlova@2x.jpg" width="260" height="300" alt="Анна Павлова.">
+              </picture>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <h3 class="swiper__name">Анна Павлова</h3>
+            <p class="swiper__fit">CrossFit</p>
+            <ul class="swiper__list">
+              <li class="swiper__item">Certified Level 3 Trainer</li>
+              <li class="swiper__item">Победитель чемпионата России по CrossFit</li>
+              <li class="swiper__item">Опыт — 6 лет</li>
+            </ul>
+            <div class="swiper__img">
+              <picture>
+                <source type="image/webp" width="260" height="300"
+                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x">
+                <img class="swiper__image" src="./img/juri/anna-pavlova.jpg" srcset="./img/juri/anna-pavlova@2x.jpg" width="260" height="300" alt="фото Анны Павловы.">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <h3 class="swiper__name">Анна Павлова</h3>
+            <p class="swiper__fit">CrossFit</p>
+            <ul class="swiper__list">
+              <li class="swiper__item">Certified Level 3 Trainer</li>
+              <li class="swiper__item">Победитель чемпионата России по CrossFit</li>
+              <li class="swiper__item">Опыт — 6 лет</li>
+            </ul>
+            <div class="swiper__img">
+              <picture>
+                <source type="image/webp" width="260" height="300"
+                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x">
+                <img class="swiper__image" src="./img/juri/anna-pavlova.jpg" srcset="./img/juri/anna-pavlova@2x.jpg" width="260" height="300" alt="Анна Павлова.">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 4</div>
+          ...
+        </div>
+        <!-- Если нам нужна пагинация -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">Слайдер-назад</div>
+        <div class="swiper-button-next">Слайдер-вперед</div>
+
+        <!-- Если нам нужна полоса прокрутки -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     </section>
+
+
     <section data-test="features">
       <h2>Наши преимущества</h2>
     </section>

@@ -1,5 +1,5 @@
 // https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
+import Swiper from 'swiper';
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
@@ -14,3 +14,12 @@ button.addEventListener('click', () => {
   }
   video.insertAdjacentHTML('afterbegin', `<iframe class="video__iframe" src="${src}" width="100%" height="100%" title="video" allowfullscreen></iframe>`);
 });
+
+
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  spaceBetween: 100,
+});
+
+
+swiper.slideNext();
