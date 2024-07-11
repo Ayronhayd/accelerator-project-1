@@ -1,3 +1,16 @@
 .juri {
-  padding: 40px 15px;
+  padding: 66px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 15px;
+  }
+}
+
+.juri__title {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
 }

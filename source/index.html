@@ -103,7 +103,7 @@
       <div class="price__wrapper">
 
         <input class="price__tab" type="radio" id="tab-1" name="tab" checked>
-        <label for="tab-1" tabindex="0">1 месяц</label>
+        <label for="tab-1" tabindex="0" >1 месяц</label>
 
         <input class="price__tab" type="radio" id="tab-2" name="tab">
         <label for="tab-2" tabindex="0">6 месяцев</label>
@@ -226,11 +226,12 @@
     <article class="games container" data-test="games">
       <div class="games__wrapper">
         <h2 class="games__title">SUPER <br> GAMES</h2>
+
         <div class="games__conteiner">
           <p class="games__date-time">
             Дата
             <span class="games__number">7</span>
-            <span class="games__month-year">Марта <br> 2019</span>
+            <span class="games__month-year">Марта 2019</span>
           </p>
 
           <p class="games__date-time">
@@ -269,9 +270,9 @@
 
       <div class="juri__swiper swiper">
 
-        <div class="juri__wrapper swiper-wrapper">
+        <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="juri__slide swiper-slide">
+          <div class="swiper-slide">
             <h3 class="swiper__name">Анна Павлова</h3>
             <p class="swiper__fit">CrossFit</p>
             <ul class="swiper__list">
@@ -289,7 +290,7 @@
 
           </div>
           <div class="swiper-slide">
-            <h3 class="swiper__name">Анна Павлова</h3>
+            <h3 class="swiper__name">Алексей Лавров</h3>
             <p class="swiper__fit">CrossFit</p>
             <ul class="swiper__list">
               <li class="swiper__item">Certified Level 3 Trainer</li>
@@ -299,8 +300,8 @@
             <div class="swiper__img">
               <picture>
                 <source type="image/webp" width="260" height="300"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x">
-                <img class="swiper__image" src="./img/juri/anna-pavlova.jpg" srcset="./img/juri/anna-pavlova@2x.jpg" width="260" height="300" alt="фото Анны Павловы.">
+                  srcset="./img/juri/alexey-lavrov.webp 1x, ./img/juri/alexey-lavrov@2x.webp 2x">
+                <img class="swiper__image" src="./img/juri/alexey-lavrov.jpg" srcset="./img/juri/alexey-lavrov@2x.jpg" width="260" height="300" alt="фото Анны Павловы.">
               </picture>
             </div>
           </div>
@@ -320,15 +321,30 @@
               </picture>
             </div>
           </div>
-          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">
+            <h3 class="swiper__name">Анна Павлова</h3>
+            <p class="swiper__fit">CrossFit</p>
+            <ul class="swiper__list">
+              <li class="swiper__item">Certified Level 3 Trainer</li>
+              <li class="swiper__item">Победитель чемпионата России по CrossFit</li>
+              <li class="swiper__item">Опыт — 6 лет</li>
+            </ul>
+            <div class="swiper__img">
+              <picture>
+                <source type="image/webp" width="260" height="300"
+                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x">
+                <img class="swiper__image" src="./img/juri/anna-pavlova.jpg" srcset="./img/juri/anna-pavlova@2x.jpg" width="260" height="300" alt="Анна Павлова.">
+              </picture>
+            </div>
+          </div>
           ...
         </div>
         <!-- Если нам нужна пагинация -->
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev">Слайдер-назад</div>
-        <div class="swiper-button-next">Слайдер-вперед</div>
+        <div class="swiper-button-prev"><span class="visually-hidden">Слайдер-назад</span></div>
+        <div class="swiper-button-next"><span class="visually-hidden">Слайдер-вперед</span> </div>
 
         <!-- Если нам нужна полоса прокрутки -->
         <div class="swiper-scrollbar"></div>

@@ -1,8 +1,30 @@
-.swiper__list {
-  // display: none;
+.swiper-slide {
+  padding: 18px 15px;
 }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
 
 .swiper__fit {
-  // display: none;
+  display: none;
 }
 
+.swiper__list {
+  display: none;
+}
+
+
+.swiper__name {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-white;
+  margin: 0;
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translateX(-65px);
+}
