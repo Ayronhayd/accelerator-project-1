@@ -174,15 +174,48 @@ $max-tab-count: 3;
 }
 
 .price__item {
-  padding: 50px 42px;
+  padding: 43px 40px;
   background-color: $color-white;
+  border: 7px solid transparent;
 
-  @media (min-width: $tablet-width) {
-    padding: 65px;
+  &:hover {
+    border: 7px solid transparent;
+    border-image: $button-gradient;
+    border-image-slice: 1;
+
+    .button--light {
+      border: 2px solid transparent;
+      border-image: $button-gradient;
+      border-image-slice: 1;
+      color: $color-white;
+      background: $button-gradient;
+    }
+
+    &:focus-visible {
+      .button--light {
+        color: $color-white;
+        background: linear-gradient(97deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+        border: 2px solid #000000;
+        outline: none;
+      }
+    }
+
+    &:active {
+      .button--light {
+        border: 2px solid transparent;
+        border-image: $button-gradient;
+        border-image-slice: 1;
+        color: $color-white;
+        opacity: 0.6;
+        outline: none;
+        background: $button-gradient;
+      }
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px;
   }
 }
 
