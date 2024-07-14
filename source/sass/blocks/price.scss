@@ -41,8 +41,6 @@ $max-tab-count: 3;
 .price__wrapper {
   display: grid;
   grid-template-columns: 53px 1fr 77px;
-  position: relative;
-  justify-content: space-evenly;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 95px 1fr 121px;
@@ -174,9 +172,19 @@ $max-tab-count: 3;
 }
 
 .price__item {
-  padding: 43px 40px;
+  padding: 43px 35px;
   background-color: $color-white;
   border: 7px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    padding: 58px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+  }
 
   &:hover {
     border: 7px solid transparent;
@@ -214,9 +222,7 @@ $max-tab-count: 3;
   }
 
 
-  @media (min-width: $tablet-width) {
-    padding: 58px;
-  }
+
 }
 
 .price__titled {
