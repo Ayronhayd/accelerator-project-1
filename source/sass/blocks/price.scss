@@ -188,7 +188,7 @@ $max-tab-count: 3;
 
   &:hover {
     border: 7px solid transparent;
-    border-image: $button-gradient;
+    border-image: $stroke;
     border-image-slice: 1;
 
     .button--light {

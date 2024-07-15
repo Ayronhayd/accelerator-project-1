@@ -1,14 +1,14 @@
 .features {
   background-color: $bg-extra;
-  padding-top: 40px;
+  padding: 40px 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 45px 0;
+    padding: 62px 45px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 103px 0;
+    padding: 101px 103px 100px;
   }
 }
 

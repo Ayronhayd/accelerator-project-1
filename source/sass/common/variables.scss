@@ -17,6 +17,7 @@ $button-banners: #ed0233;
 $button-gradient-end: #003eb7;
 $button-gradient: linear-gradient(97deg, $button-banners 17.6%, $button-gradient-end 95.31%);
 $button-tabs: #d10a42;
+$button-border: #74819c;
 
 // Background Colors
 $bg-extra: #f8f9fc;
@@ -24,6 +25,9 @@ $bg-banners: #ed0233;
 $bg-hero-gradient: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 $bg-footer: #030a1a;
 $bg-supplementary: #1c3374;
+
+// Заливка кнопки, обводка плашек
+$stroke: linear-gradient(149deg, #d10a42 0.85%, #00359f 100%);
 
 //  Вьюпорты
 $tablet-width: 768px;
