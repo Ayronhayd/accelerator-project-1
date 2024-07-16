@@ -1,0 +1,40 @@
+.tabs-box {
+  background-color: #3d4a60;
+  width: 300px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+
+.tabs-box .acord {
+  position: relative;
+  overflow: hidden;
+}
+
+.tabs-box .acord label {
+  position: relative;
+  z-index: 1000;
+  display: block;
+  padding: 0 40px 0 0;
+}
+
+
+.tabs-box .acord input {
+  display: none;
+}
+
+.tabs-box .content {
+  position: relative;
+  overflow: hidden;
+  transition: height 1s linear 0s;
+  height: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #e4e4e4;
+  text-align: center;
+}
+
+.tabs-box [type="checkbox"]:checked ~ .content {
+  height: 50px;
+  padding: 10px;
+}
+
