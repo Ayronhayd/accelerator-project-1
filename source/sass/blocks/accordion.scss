@@ -1,18 +1,15 @@
 .tabs-box {
   background-color: #3d4a60;
   width: 300px;
-  margin: 40px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
 
-.tabs-box .acord {
+.acord {
   position: relative;
   overflow: hidden;
 }
 
 .tabs-box .acord label {
   position: relative;
-  z-index: 1000;
   display: block;
   padding: 0 40px 0 0;
 }
