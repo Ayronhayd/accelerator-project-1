@@ -1,35 +1,48 @@
 .accordion {
   background-color: $color-white;
+  color: $color-basic;
+  width: 300px;
+  margin: 40px auto;
+  text-align: left;
 }
 
 .accordion__acord {
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid $button-border;
+
+  label {
+    position: relative;
+    z-index: 2;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 20px 0 0;
+  }
+
+  input {
+    display: none;
+  }
+
+  p {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 2s ease, padding 1s ease;
+    padding: 0;
+    max-height: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    background-color: $color-white;
+    color: $color-basic;
+
+  }
 }
 
-.accordion .accordion__acord label {
-  position: relative;
-  display: block;
+
+.accordion [type="checkbox"]:checked ~ p {
+  max-height: 3000px;
+  padding: 10px 0;
 }
-
-
-.accordion .accordion__acord input {
-  display: none;
-}
-
-.accordion .content {
-  position: relative;
-  overflow: hidden;
-  transition: height 1s linear 0s;
-  height: 0;
-  font-size: 14px;
-  line-height: 22px;
-  color: #e4e4e4;
-  text-align: center;
-}
-
-.accordion [type="checkbox"]:checked ~ div {
-  height: 70px;
-  padding: 10px;
-}
-
