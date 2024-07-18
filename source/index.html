@@ -546,96 +546,88 @@
     <section class="faq" data-test="faq">
       <h2 class="faq__title title">Вопросы и ответы</h2>
 
-      <div class="faq__container">
+      <div class="dropping">
+        <input class="dropping__radio dropping__radio--one" id="one" name="group" type="radio" checked>
+        <input class="dropping__radio dropping__radio--two" id="two" name="group" type="radio">
+        <input class="dropping__radio dropping__radio--three" id="three" name="group" type="radio">
+        <input class="dropping__radio dropping__radio--for" id="for" name="group" type="radio">
 
-        <div class="dropping">
-          <div class="dropping__tab">
-            <input class="dropping__input" type="radio" id="dropping-1" name="dropping-tabs" checked>
-            <label for="dropping-1">Центр</label>
-            <div class="dropping__content">
+        <div class="dropping__tabs">
+          <label class="dropping__tab dropping__tab--one" tabindex="0"  for="one">Центр</label>
+          <label class="dropping__tab dropping__tab--two" tabindex="0" for="two">Абонемент</label>
+          <label class="dropping__tab dropping__tab--three" tabindex="0" for="three">Услуги</label>
+          <label class="dropping__tab dropping__tab--for" tabindex="0" for="for">Правила</label>
+        </div>
 
+        <div class="dropping__panels">
 
-
-
-              <div class="tabs-box">
-                <div class="acord">
-                  <label class="bg-one" for="tb-one" >
-                    acord one
-                  </label>
-                  <input type="checkbox" name="mytabs" id="tb-one">
-                  <div class="content">
-                    Lorem Ipsum is simply du.
-                  </div>
+          <div class="dropping__panel dropping__panel--one" >
+            <div class="accordion">
+              <div class="acord accordion__acord">
+                <label for="tb-one">
+                  Как стать членом фитнес-центра?
+                </label>
+                <input type="checkbox" name="mytabs" id="tb-one">
+                <div>
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                  При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
                 </div>
+              </div>
 
-                <div class="acord">
-                  <label  class="bg-two" for="tb-two">
-                    acord two
-                  </label>
-                  <input type="checkbox" name="mytabs" id="tb-two">
-                  <div class="content">
-                    Lorem Ipsum .
-                  </div>
+              <div class="acord accordion__acord">
+                <label for="tb-two">
+                  Где можно посмотреть расписание?
+                </label>
+                <input type="checkbox" name="mytabs" id="tb-two">
+                <div>
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
                 </div>
+              </div>
 
-                <div class="acord">
-                  <label class="bg-three" for="tb-three" >
-                    acord three
-                  </label>
-                  <input type="checkbox" name="mytabs" id="tb-three">
-                  <div class="content">
-                    Lorem Ipsum .
-                  </div>
+              <div class="acord accordion__acord">
+                <label for="tb-three">
+                  Есть кулеры в центре? Предоставляются полотенца?
+                </label>
+                <input type="checkbox" name="mytabs" id="tb-three">
+                <div>
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
                 </div>
+              </div>
 
-                <div class="acord">
-                  <label class="bg-four" for="tb-four" >
-                    acord four
-                  </label>
-                  <input type="checkbox" name="mytabs" id="tb-four">
-                  <div class="content">
-                    Lorem Ipsum .
-                  </div>
+              <div class="acord accordion__acord">
+                <label for="tb-four">
+                  Сколько тренеров работает в клубе и какова их квалификация?
+                </label>
+                <input type="checkbox" name="mytabs" id="tb-four">
+                <div>
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
+                  покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
                 </div>
-
               </div>
 
             </div>
           </div>
 
-          <div class="dropping__tab">
-            <input class="dropping__input" type="radio" id="dropping-2" name="dropping-tabs">
-            <label class="dropping__label" for="dropping-2">Абонемент</label>
-            <div class="dropping__content">
-
-              <p>Cats go for world domination if it fits, i sits, meowwww but claw drapes, or sleep in the bathroom
-                sink. Missing until dinner time under the bed, or eat from dog's food hide from vacuum cleaner kick up
-                litter but lie on your belly and purr when you are asleep.</p>
-            </div>
+          <div class="dropping__panel dropping__panel--two" >
+            <div class="panel-title">Title2</div>
+            <p>Content2</p>
           </div>
 
-          <div class="dropping__tab">
-            <input class="dropping__input" type="radio" id="dropping-3" name="dropping-tabs">
-            <label class="dropping__label" for="dropping-3">Услуги</label>
-            <div class="dropping__content">
-              <p>Throwup on your pillow wake up human for food at 4am and hide when guests come over, yet inspect
-                anything brought into the house.</p>
-            </div>
+          <div class="dropping__panel dropping__panel--three" >
+            <div class="panel-title">Title3</div>
+            <p>Content3</p>
           </div>
 
-          <div class="dropping__tab">
-            <input class="dropping__input" type="radio" id="dropping-4" name="dropping-tabs">
-            <label class="dropping__label" for="dropping-4">Правила</label>
-            <div class="dropping__content">
-              <p>Use lap as chair love to play with owner's hair tie pooping rainbow while flying in a toasted bread
-                costume in space. Run in circles loves cheeseburgers, nap all day kick up litter. Stick butt in face
-                hide when guests come over.</p>
-
-            </div>
+          <div class="dropping__panel dropping__panel--for">
+            <div class="panel-title">Titafafle3</div>
+            <p>Conteafafafnt3</p>
           </div>
 
         </div>
       </div>
+
     </section>
 
 

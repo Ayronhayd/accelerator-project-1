@@ -1,79 +1,70 @@
-.faq__container {
-  max-width: 960px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-
 .dropping {
-  position: relative;
   display: flex;
-  min-height: 300px;
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
+  flex-direction: column;
+  padding: 0 15px;
+  gap: 37px;
 }
 
-.dropping__tab {
-  flex: 1;
+.dropping__tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-.dropping__tab label {
-  display: block;
-  box-sizing: border-box;
-
-  height: 40px;
-
-  padding: 10px;
-  text-align: center;
-  background: #9768d1;
-  cursor: pointer;
-  transition: background 0.5s ease;
+.dropping__panels {
+  background: #ffffff;
+  border-top: 1px solid $button-border;
 }
 
-.dropping__tab label:hover {
-  background: #7b52ab;
+.dropping__panel {
+  display: none;
+  animation: fadein 0.8s;
 }
 
-.dropping__content {
-  position: absolute;
-
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 40px;
-
-
-  padding: 20px;
-  border-radius: 0 0 8px 8px;
-  background: #553285;
-
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
-
-  /* show/hide */
-  opacity: 0;
-}
-
-// transform: scale(0.1);
-// transform-origin: top left;
-
-/* MAKE IT WORK ----- */
-.dropping__tab [type="radio"] {
+.dropping__radio {
   display: none;
 }
 
-.dropping__input[type="radio"]:checked ~ label {
-  background: #553285;
-  z-index: 2;
+.dropping__radio--one:checked ~ .dropping__panels .dropping__panel--one,
+.dropping__radio--two:checked ~ .dropping__panels .dropping__panel--two,
+.dropping__radio--three:checked ~ .dropping__panels .dropping__panel--three,
+.dropping__radio--for:checked ~ .dropping__panels .dropping__panel--for {
+  display: block;
 }
 
-[type="radio"]:checked ~ label ~ .dropping__content {
-  z-index: 1;
+.dropping__tab {
+  cursor: pointer;
+  padding: 14px 22px 12px;
+  background-color: $color-white;
+  color: $color-basic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border: 1px solid rgba($color-basic, 0.2);
+  text-align: center;
 
-  /* show/hide */
-  opacity: 1;
+  &:hover,
+  &:focus {
+    border: 1px solid $color-basic;
+    outline: none;
+  }
+
+  &:active {
+    border: 1px solid transparent;
+    border-image: $button-gradient;
+    border-image-slice: 1;
+    color: $color-white;
+    background: $button-gradient;
+  }
 }
 
-//  transform: scale(1);
+.dropping__radio--one:checked ~ .dropping__tabs .dropping__tab--one,
+.dropping__radio--two:checked ~ .dropping__tabs .dropping__tab--two,
+.dropping__radio--three:checked ~ .dropping__tabs .dropping__tab--three,
+.dropping__radio--for:checked ~ .dropping__tabs .dropping__tab--for {
+  border: 1px solid transparent;
+  border-image: $button-gradient;
+  border-image-slice: 1;
+  color: $color-white;
+  background: $button-gradient;
+}
