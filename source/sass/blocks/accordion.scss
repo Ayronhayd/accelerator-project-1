@@ -1,9 +1,15 @@
 .accordion {
-  background-color: $color-white;
-  color: $color-basic;
-  width: 300px;
-  margin: 40px auto;
+  background-color: $bg-extra;
+  margin: 20px auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    margin: 0 auto;
+  }
 }
 
 .accordion__acord {
@@ -12,13 +18,34 @@
   border-bottom: 1px solid $button-border;
 
   label {
-    position: relative;
-    z-index: 2;
-    display: block;
+    cursor: pointer;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    padding: 0 20px 0 0;
+    padding: 0;
+    margin: 0 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    gap: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+      grid-template-columns: 1fr 40px;
+      margin: 0;
+      align-items: center;
+      padding: 23px 0;
+      gap: 65px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   input {
@@ -26,23 +53,148 @@
   }
 
   p {
-    position: relative;
-    overflow: hidden;
-    transition: max-height 2s ease, padding 1s ease;
+    transition: max-height 2s ease, padding 2s ease;
     padding: 0;
     max-height: 0;
     margin: 0;
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
-    background-color: $color-white;
-    color: $color-basic;
+    padding-right: 30px;
 
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+      padding-right: 110px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 225px;
+    }
   }
 }
 
 
 .accordion [type="checkbox"]:checked ~ p {
   max-height: 3000px;
-  padding: 10px 0;
+  padding: 0 30px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 110px 23px 0;
+    margin-top: -13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 225px 21px 0;
+  }
+}
+
+.accordion__acord [type="checkbox"] ~ label i {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-basic;
+  border-radius: 50%;
+  transition: 2s;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $color-basic;
+  }
+
+
+  &::before {
+    transform: translate(-7px, -1px);
+    height: 2px;
+    width: 14px;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      transform: translate(-10px, -1px);
+    }
+  }
+
+  &::after {
+    transform: translate(-1px, -7px);
+    width: 2px;
+    height: 14px;
+
+    @media (min-width: $tablet-width) {
+      height: 20px;
+      transform: translate(-1px, -10px);
+    }
+  }
+}
+
+.accordion__acord [type="checkbox"]:checked ~ label i {
+  background-color: $color-basic;
+  border: 1px solid $color-basic;
+
+  &::before {
+    background-color: $color-white;
+  }
+
+  &::after {
+    width: 0;
+    height: 0;
+  }
+}
+
+// hover
+.accordion__acord [type="checkbox"] ~ label:hover i {
+  background-color: $color-basic;
+
+  &::after,
+  &::before {
+    background-color: $color-white;
+  }
+}
+
+.accordion__acord [type="checkbox"]:checked ~ label:hover i {
+  background-color: $button-border;
+
+  &::after,
+  &::before {
+    background-color: $color-white;
+  }
+}
+
+// focus
+.accordion__acord [type="checkbox"] ~ label i:focus {
+  background-color: $button-border;
+  outline: none;
+
+  &::after,
+  &::before {
+    background-color: $color-white;
+  }
+}
+
+
+// disabled
+.accordion__acord [type="checkbox"]:disabled ~ label {
+  cursor: default;
+}
+
+.accordion__acord [type="checkbox"]:disabled ~ label i {
+  border-color: rgba($color-basic, 0.2);
+  background-color: $color-white;
+  cursor: default;
+
+  &::after,
+  &::before {
+    opacity: 0.3;
+  }
 }

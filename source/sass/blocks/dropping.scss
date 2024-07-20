@@ -3,16 +3,41 @@
   flex-direction: column;
   padding: 0 15px;
   gap: 35px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 45px;
+    gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+    padding: 0;
+    padding-top: 50px;
+  }
 }
 
 .dropping__tabs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+    height: min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .dropping__panels {
-  background: #ffffff;
   border-top: 1px solid $button-border;
 }
 
@@ -42,6 +67,16 @@
   line-height: 16px;
   border: 1px solid rgba($color-basic, 0.2);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 22px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 22px 15px;
+  }
 
   &:hover,
   &:focus {
