@@ -1,3 +1,14 @@
-.body {
-  // ff
+.reviews {
+  background-color: $color-white;
+  padding-top: 40px;
+}
+
+.reviews__title {
+  text-align: center;
+}
+
+.reviews__swiper {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
 }

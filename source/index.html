@@ -267,14 +267,14 @@
     <section class="juri" data-test="juri">
       <div class="juri__container container">
         <h2 class="juri__title title">Жюри</h2>
-        <button class="swiper-button-prev swiper-button" type="button" tabindex="0">
+        <button class="juri__button-prev swiper-button-prev swiper-button" type="button" tabindex="0">
           <span class="visually-hidden">Слайдер-назад</span>
         </button>
         <div class="juri__swiper swiper">
           <div class="swiper__container">
-            <div class="swiper-wrapper">
+            <div class="juri__swiper-wrapper swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -293,7 +293,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -312,7 +312,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -331,7 +331,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -350,7 +350,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -369,7 +369,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -388,7 +388,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -407,7 +407,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="juri__swiper-slide swiper-slide">
                 <div class="swiper__img" tabindex="0">
                   <picture>
                     <source type="image/webp" width="260" height="300"
@@ -429,8 +429,9 @@
             </div>
           </div>
         </div>
-        <button class="swiper-button-next swiper-button" type="button" tabindex="0">
-          <span class="visually-hidden">Слайдер-вперед</span></button>
+        <button class="juri__button-next swiper-button-next swiper-button" type="button" tabindex="0">
+          <span class="visually-hidden">Слайдер-вперед</span>
+        </button>
       </div>
     </section>
 
@@ -541,8 +542,6 @@
       </ul>
     </article>
 
-
-
     <section class="faq" data-test="faq">
       <h2 class="faq__title title">Вопросы и ответы</h2>
 
@@ -566,20 +565,20 @@
             <div class="accordion">
               <div class="accordion__acord">
                 <input class="checkbox" type="checkbox" checked name="mytabs" id="tab-one-1">
-                <label for="tab-one-1" >
+                <label for="tab-one-1">
                   Как стать членом <br>фитнес-центра?
                   <i tabindex="0"></i>
                 </label>
                 <p>
                   При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
-                  При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придёт вам
+                  При&nbsp;покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придёт вам
                   на&nbsp;почту.
                 </p>
               </div>
 
               <div class="accordion__acord">
                 <input type="checkbox" name="mytabs" id="tab-two-1">
-                <label for="tab-two-1" >
+                <label for="tab-two-1">
                   Где можно посмотреть расписание?
                   <i tabindex="0"></i>
                 </label>
@@ -592,7 +591,7 @@
 
               <div class="accordion__acord">
                 <input type="checkbox" name="mytabs" id="tab-three-1">
-                <label for="tab-three-1" >
+                <label for="tab-three-1">
                   Есть кулеры в центре? Предоставляются полотенца?
                   <i tabindex="0"></i>
                 </label>
@@ -606,7 +605,7 @@
 
               <div class="accordion__acord">
                 <input type="checkbox" name="mytabs" id="tab-four-1">
-                <label for="tab-four-1" >
+                <label for="tab-four-1">
                   Сколько тренеров работает в клубе и какова их квалификация?
                   <i tabindex="0"></i>
                 </label>
@@ -802,9 +801,30 @@
 
 
 
-
     <section class="reviews" data-test="reviews">
       <h2 class="reviews__title title">Отзывы</h2>
+
+      <div class="reviews__swiper">
+        <!-- враппер -->
+        <div class="swiper-wrapper">
+        <!-- слайды -->
+        <div class="swiper-slide reviews__slide">
+adadadada
+        </div>
+
+        </div>
+
+        <!-- кнопки для навигации -->
+        <button class="reviews__button-prev swiper-button-prev swiper-button" type="button">
+            <span class="visually-hidden">Слайдер-назад</span>
+          </button>
+        <button class="reviews__button-next swiper-button-next swiper-button" type="button">
+          <span class="visually-hidden">Слайдер-вперед</span>
+        </button>
+        </div>
+
+
+
 
 
 

@@ -18,8 +18,8 @@ const swiper = new Swiper('.swiper__container', {
   modules: [Navigation],
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.juri__button-next',
+    prevEl: '.juri__button-prev',
   },
   breakpoints: {
     320: {
@@ -37,7 +37,16 @@ const swiper = new Swiper('.swiper__container', {
     }
   },
 });
+swiper.update();
 
+const swiper1 = new Swiper('.reviews__swiper', {
+  modules: [Navigation],
+  allowTouchMove: true,
+  loop: false,
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+});
 
-swiper();
-
+swiper1.update();
