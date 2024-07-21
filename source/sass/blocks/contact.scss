@@ -1,13 +1,17 @@
 .contact {
   background-color: $color-white;
   padding: 38px 15px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px;
+    padding: 60px 45px 57px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 60px 103px;
+    width: 684px;
   }
 }
 

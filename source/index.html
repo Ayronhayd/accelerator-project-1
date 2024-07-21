@@ -55,7 +55,7 @@
 
   <main class="page-main">
 
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="services">
       <div class="about__wrapper">
         <h2 class="about__title title">Тренажёрный зал</h2>
         <p class="about__titled">Просторный зал площадью 900 кв/м</p>
@@ -98,7 +98,7 @@
       </div>
     </section>
 
-    <section class="price" data-test="price">
+    <section class="price" data-test="price" id="price">
       <h2 class="price__title title">Абонементы</h2>
       <div class="price__wrapper">
 
@@ -496,7 +496,7 @@
       </ul>
     </section>
 
-    <article class="offers" data-test="offers">
+    <article class="offers" data-test="offers" id="offers">
       <h2 class="offers__title title">Акции</h2>
 
       <div class="offers__wrapper">
@@ -874,7 +874,7 @@
           <div class="form__container">
             <label class="form__label">
               <span class="visually-hidden">Имя</span>
-              <input class="form__input form__input--name" name="name" type="text"  placeholder="Имя" required>
+              <input class="form__input form__input--name" name="name" type="text" placeholder="Имя" required>
               <span class="form__error form__error-name">В поле Имя допускается ввод только букв и пробелов</span>
             </label>
           </div>
@@ -924,7 +924,53 @@
 
 
   <footer class="footer" data-test="footer">
-    footer
+    <img class="hero__logo logo" src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#services">Услуги</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link"  href="#price">Абонементы</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link"  href="#offers">Акции</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link"  href="#">Тренеры</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link"  href="#">Расписание</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="footer__list-social">
+      <li class="footer__item-social">
+        <a href="https://up.htmlacademy.ru/">
+          <span class="visually-hidden">в контакте.</span>
+          <svg class="footer__icon" width="9" height="12">
+            <use href="/__spritemap#sprite-play"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item-social">
+        <a href="https://up.htmlacademy.ru/">
+          <span class="visually-hidden">одноклассники</span>
+          <svg class="footer__icon" width="9" height="12">
+            <use href="/__spritemap#sprite-play"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item-social">
+        <a href="https://up.htmlacademy.ru/">
+          <span class="visually-hidden">reddit</span>
+          <svg class="footer__icon" width="9" height="12">
+            <use href="/__spritemap#sprite-play"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
