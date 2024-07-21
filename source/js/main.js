@@ -41,7 +41,8 @@ swiper.update();
 
 const swiper1 = new Swiper('.reviews__swiper', {
   modules: [Navigation],
-  allowTouchMove: true,
+  spaceBetween: 40,
+  slidesPerView: 1,
   loop: false,
   navigation: {
     nextEl: '.reviews__button-next',
