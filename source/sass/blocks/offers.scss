@@ -124,10 +124,40 @@
     padding-bottom: 3px;
   }
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 1px solid $color-basic;
+    outline-offset: 10px;
+    border-color: transparent;
+  }
+
+  &:active {
+    outline: none;
+    color: $color-basic;
+  }
+
 
   &--special {
     color: $color-white;
     border-bottom: 1px solid $color-white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: 1px solid $color-white;
+      outline-offset: 10px;
+      border-color: transparent;
+    }
+
+    &:active {
+      outline: none;
+      color: $color-white;
+    }
   }
 }
 
