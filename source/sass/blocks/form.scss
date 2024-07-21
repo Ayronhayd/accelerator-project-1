@@ -1,9 +1,20 @@
+.form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form__free {
   background-color: $color-basic;
   padding: 71px 15px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px;
   }
 }
 
@@ -19,6 +30,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 477px;
+  }
 }
 
 .form__title {
@@ -29,6 +45,10 @@
     line-height: 54px;
     text-align: center;
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
