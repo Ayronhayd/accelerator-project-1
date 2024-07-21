@@ -1,16 +1,16 @@
 .reviews {
   background-color: $color-white;
-  padding-top: 40px;
   position: relative;
+  padding: 40px 0 42px;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 0 0;
+    padding: 59px 0 60px;
     width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 0;
+    padding: 100px 0;
   }
 }
 
@@ -30,10 +30,10 @@
 
 .reviews__button-next,
 .reviews__button-prev {
-  top: calc(70% - 8px);
+  top: calc(61% - 8px);
 
   @media (min-width: $desktop-width) {
-    top: calc(75% - 10px);
+    top: calc(62% - 9px);
   }
 }
 
