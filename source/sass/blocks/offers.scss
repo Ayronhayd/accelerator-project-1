@@ -139,6 +139,12 @@
     color: $color-basic;
   }
 
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+
 
   &--special {
     color: $color-white;
