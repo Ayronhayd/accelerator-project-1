@@ -39,6 +39,26 @@
   line-height: 20px;
   color: $color-white;
   padding: 10px 0;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $color-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-white;
+  }
+
+  &--disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 .footer__list-social {
@@ -59,8 +79,35 @@
 }
 
 .footer__social-link {
-  padding: 10px 0;
+  display: flex;
   width: 25px;
   height: 25px;
   color: $bg-footer;
+  background-color: $color-white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $button-border;
+    color: $color-white;
+  }
+
+  &:focus {
+    background-color: $text-accent;
+    color: $color-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-basic;
+    background-color: $text-accent;
+  }
+
+  &--disabled {
+    color: $bg-footer;
+    background-color: #c7cad2;
+    cursor: default;
+    pointer-events: none;
+  }
 }

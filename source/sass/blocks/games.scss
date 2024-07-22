@@ -2,14 +2,14 @@
   padding: 26px 15px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 60px 45px;
     display: grid;
     grid-template-columns: 1fr 378px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 660px;
-    padding: 101px 0 100px;
+    padding: 101px 103px 100px;
   }
 }
 
