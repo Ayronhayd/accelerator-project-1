@@ -1,14 +1,14 @@
 .juri {
   background-color: $color-white;
   position: relative;
-  padding: 66px 15px 15px;
+  padding: 41px 15px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 90px 15px 60px;
+    padding: 30px 15px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 200px 0 100px;
+    padding: 100px 0;
   }
 }
 

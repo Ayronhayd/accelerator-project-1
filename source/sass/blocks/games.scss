@@ -1,15 +1,15 @@
 .games {
-  padding-top: 26px;
+  padding: 26px 15px 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding: 60px 0;
     display: grid;
     grid-template-columns: 1fr 378px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 660px;
-    padding-top: 101px;
+    padding: 101px 0 100px;
   }
 }
 
