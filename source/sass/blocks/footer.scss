@@ -21,11 +21,11 @@
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 18px 35px;
+  gap: 18px 33px;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    gap: 18px 31px;
+    gap: 18px 29px;
   }
 
   @media (min-width: $desktop-width) {

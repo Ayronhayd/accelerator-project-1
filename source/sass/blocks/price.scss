@@ -1,7 +1,5 @@
-$max-tab-count: 3;
-
 .price {
-  padding: 40px 15px;
+  padding: 41px 15px 39px;
   background-color: $bg-extra;
 
   @media (min-width: $tablet-width) {
@@ -27,10 +25,10 @@ $max-tab-count: 3;
 
 .price__title {
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 35px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,116 +37,100 @@ $max-tab-count: 3;
 }
 
 .price__wrapper {
-  display: grid;
-  grid-template-columns: 53px 1fr 77px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 95px 1fr 121px;
+    // grid-template-columns: 95px 1fr 121px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 471px 188px 1fr;
+    // grid-template-columns: 471px 188px 1fr;
   }
 }
 
-.price__tab {
+.price__dropping-panel {
   display: none;
-
-  @for $i from 1 through $max-tab-count {
-    &:checked:nth-of-type(#{$i})~.price__content:nth-of-type(#{$i}) {
-      opacity: 1;
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
-      position: relative;
-      top: 0;
-      z-index: 1;
-      transform: translateY(0);
-      background-color: $color-white;
-    }
-  }
-
-  &:checked + label {
-    color: $color-basic;
-    cursor: default;
-    border-bottom: 2px solid $button-banners;
-  }
-
-  +label {
-    cursor: pointer;
-    display: block;
-    padding-bottom: 6px;
-    text-align: center;
-    margin-bottom: 30px;
-
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    color: rgba($color-basic, 0.5);
-    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
-
-    @media (min-width: $tablet-width) {
-      font-size: 18px;
-      line-height: 18px;
-      margin-bottom: 45px;
-      padding-bottom: 7px;
-      text-align: left;
-
-      &:first-of-type {
-        margin-left: 35px;
-
-        @media (min-width: $desktop-width) {
-          margin-left: auto;
-        }
-      }
-
-      &:nth-of-type(2) {
-        text-align: center;
-      }
-
-      &:last-of-type {
-        margin-right: 35px;
-
-        @media (min-width: $desktop-width) {
-          margin-right: auto;
-        }
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 40px;
-      padding-bottom: 8px;
-    }
-
-    &:hover {
-      color: rgba($color-basic, 0.7);
-      border-bottom: 2px solid #787878;
-    }
-
-    &:focus-visible {
-      color: $color-basic;
-      border-bottom: 2px solid $color-basic;
-      outline: none;
-    }
-
-    &:active {
-      color: $color-basic;
-      border-bottom: 2px solid $button-banners;
-      outline: none;
-    }
-  }
+  animation: fadein 0.8s;
 }
 
 
-.price__content {
-  grid-column: 1/-1;
+.price__dropping-radio {
+  display: none;
+}
+
+.price__dropping-radio--one:checked ~ .price__dropping-panels .price__dropping-panel--one,
+.price__dropping-radio--two:checked ~ .price__dropping-panels .price__dropping-panel--two,
+.price__dropping-radio--three:checked ~ .price__dropping-panels .price__dropping-panel--three {
+  display: block;
+}
+
+.price__dropping-tabs {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -2px 0 0 rgb(120, 120, 120, 0.6) inset;
+  margin-bottom: 30px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 0 auto 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin: 0 auto 40px;
+  }
+}
+
+.price__dropping-tab {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 6px;
   text-align: center;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  opacity: 0;
-  left: 0;
-  transform: translateY(-3px);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba($color-basic, 0.5);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 6px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+
+  &:hover {
+    color: rgba($color-basic, 0.7);
+    border-bottom: 2px solid #787878;
+  }
+
+  &:focus-visible {
+    color: $color-basic;
+    border-bottom: 2px solid $color-basic;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-basic;
+    border-bottom: 2px solid $button-banners;
+    outline: none;
+  }
+}
+
+.price__dropping-radio--one:checked ~ .price__dropping-tabs .price__dropping-tab--one,
+.price__dropping-radio--two:checked ~ .price__dropping-tabs .price__dropping-tab--two,
+.price__dropping-radio--three:checked ~ .price__dropping-tabs .price__dropping-tab--three {
+  color: $color-basic;
+  border-bottom: 2px solid $button-banners;
+  outline: none;
 }
 
 .price__list {
@@ -157,9 +139,9 @@ $max-tab-count: 3;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 35px;
   background-color: $bg-extra;
-  flex-wrap: wrap;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     gap: 40px;
@@ -172,7 +154,7 @@ $max-tab-count: 3;
 }
 
 .price__item {
-  padding: 43px 35px;
+  padding: 44px 35px 43px;
   background-color: $color-white;
   border: 7px solid transparent;
 
@@ -229,6 +211,7 @@ $max-tab-count: 3;
   margin: 0;
   margin-bottom: 18px;
 
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
@@ -266,11 +249,11 @@ $max-tab-count: 3;
   line-height: 72px;
   color: $text-accent;
   margin: 0;
-  padding-top: 47px;
-  margin-bottom: 18px;
+  padding-top: 46px;
+  margin-bottom: 19px;
   position: relative;
   z-index: 1;
-  gap: 14px;
+  gap: 10px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -278,9 +261,12 @@ $max-tab-count: 3;
     font-size: 60px;
     line-height: 90px;
     margin-bottom: 22px;
+    gap: 14px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 64px;
+    gap: 15px;
     margin-bottom: 17px;
   }
 }
