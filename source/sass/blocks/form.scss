@@ -23,7 +23,7 @@
   width: 290px;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 35px;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -71,7 +71,7 @@
   border: 1px solid;
   border-color: transparent transparent rgba($color-white, 0.5);
   width: 100%;
-  padding: 3px 0;
+  padding: 0 0 4px;
   color: $color-white;
   font-size: 14px;
   font-weight: 400;

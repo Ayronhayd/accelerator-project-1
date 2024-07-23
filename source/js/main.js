@@ -57,8 +57,8 @@ const nameInput = form.querySelector('.form__input--name');
 const nameError = form.querySelector('.form__error-name');
 const phoneInput = form.querySelector('.form__input--phone');
 const phoneError = form.querySelector('.form__error-phone');
-const NAME_VALID = /^[a-zA-Zа-яА-ЯЁё]+$/;
-const PHONE_VALID = /\+\d/;
+const NAME_VALID = /^[a-zA-Zа-яА-ЯЁё\s]+$/;
+const PHONE_VALID = /^\+\d/;
 
 
 const validateInput = (input, regex, error) => {
@@ -68,9 +68,9 @@ const validateInput = (input, regex, error) => {
   return isValid;
 };
 form.addEventListener('submit', (e) => {
-  const isNameValid = validateInput(nameInput, NAME_VALID, nameError);
-  const isPhoneValid = phoneInput.value ? validateInput(phoneInput, PHONE_VALID, phoneError) : true;
-  if (!isNameValid || !isPhoneValid) {
+  const nameValid = validateInput(nameInput, NAME_VALID, nameError);
+  const phoneValid = phoneInput.value ? validateInput(phoneInput, PHONE_VALID, phoneError) : true;
+  if (!nameValid || !phoneValid) {
     e.preventDefault();
   }
 });

@@ -1,7 +1,7 @@
 .reviews {
   background-color: $color-white;
   position: relative;
-  padding: 40px 0 42px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 59px 0 60px;
@@ -73,6 +73,7 @@
   color: $color-white;
   padding: 29px 25px;
   text-align: center;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -91,7 +92,7 @@
   img {
     border-radius: 50%;
     display: block;
-    margin: 0 auto 9px;
+    margin: 0 auto 11px;
     width: 68px;
     height: 68px;
 

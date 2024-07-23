@@ -1,9 +1,8 @@
 .footer {
   background-color: $bg-footer;
-  padding: 40px 15px 35px;
+  padding: 40px 15px;
   display: flex;
   flex-direction: column;
-  gap: 29px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -16,6 +15,10 @@
   }
 }
 
+.footer__logo {
+  margin-bottom: 30px;
+}
+
 .footer__list {
   list-style: none;
   padding: 0;
@@ -23,6 +26,7 @@
   display: flex;
   gap: 18px 33px;
   flex-wrap: wrap;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     gap: 18px 29px;
