@@ -1,8 +1,3 @@
-<!-- пример использования спрайта -->
-<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
-    <use href="/__spritemap#sprite-user"></use>
-  </svg> -->
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
@@ -36,7 +31,7 @@
             <span class="hero__span">Омск</span>
             Фитнес центр
           </h1>
-          <a class="hero__button button button--primary" href="#subscriptions" type="button">Купить абонемент</a>
+          <a class="hero__button button button--primary" href="#subscriptions">Купить абонемент</a>
         </div>
 
         <picture>
@@ -81,10 +76,9 @@
             srcset="./img/about/about-desctop.jpg 1x, ./img/about/about-desctop@2x.jpg  2x">
           <source type="image/png" width="678" height="345" media="(min-width: 768px)"
             srcset="./img/about/about-tablet.jpg 1x, ./img/about/about-tablet@2x.jpg 2x">
-          <img class="hero__image" src="./img/about/about-mobil.jpg" srcset="./img/about/about-mobil@2x.jpg" width="320"
+          <img class="about__image" src="./img/about/about-mobil.jpg" srcset="./img/about/about-mobil@2x.jpg" width="320"
             height="280" alt="Тренажёрный зал.">
         </picture>
-      </div>
       </div>
 
       <div class="about__container video"
@@ -101,12 +95,12 @@
     <section class="price" data-test="price" id="price">
       <h2 class="price__title title">Абонементы</h2>
 
-      <div class="price__wrapper price__dropping">
+      <div class="price__dropping">
 
-        <input class="price__tab price__dropping-radio price__dropping-radio--one" type="radio" id="tab-1" name="tab"
+        <input class="price__dropping-radio price__dropping-radio--one" type="radio" id="tab-1" name="tab"
           checked>
-        <input class="price__tab price__dropping-radio price__dropping-radio--two" type="radio" id="tab-2" name="tab">
-        <input class="price__tab price__dropping-radio price__dropping-radio--three" type="radio" id="tab-3" name="tab">
+        <input class="price__dropping-radio price__dropping-radio--two" type="radio" id="tab-2" name="tab">
+        <input class="price__dropping-radio price__dropping-radio--three" type="radio" id="tab-3" name="tab">
 
 
         <div class="price__dropping-tabs">
@@ -117,7 +111,7 @@
 
         <div class="price__dropping-panels">
 
-          <div class="price__content price__dropping-panel price__dropping-panel--one">
+          <div class="price__dropping-panel price__dropping-panel--one">
             <ul class="price__list">
               <li class="price__item">
                 <h3 class="price__titled">С тренером</h3>
@@ -149,7 +143,7 @@
             </ul>
           </div>
 
-          <div class="price__content price__dropping-panel price__dropping-panel--two">
+          <div class="price__dropping-panel price__dropping-panel--two">
             <ul class="price__list">
               <li class="price__item">
                 <h3 class="price__titled">С тренером</h3>
@@ -180,7 +174,7 @@
               </li>
             </ul>
           </div>
-          <div class="price__content price__dropping-panel price__dropping-panel--three">
+          <div class="price__dropping-panel price__dropping-panel--three">
             <ul class="price__list">
               <li class="price__item">
                 <h3 class="price__titled">С тренером</h3>
@@ -431,7 +425,7 @@
       </div>
     </section>
 
-    <section class="features features__container" data-test="features">
+    <section class="features" data-test="features">
       <h2 class="features__title title">Наши преимущества</h2>
       <ul class="features__list">
 
@@ -784,10 +778,9 @@
                 </p>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -797,17 +790,13 @@
       <div class="reviews__container">
 
         <div class="reviews__swiper">
-          <div class="swiper-wrapper reviews__wrapper">
+          <div class="reviews__wrapper swiper-wrapper ">
 
             <div class="swiper-slide reviews__slide">
               <picture>
-                <!-- <source type="image/webp" width="80" height="80" media="(min-width: 768px)"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x"> -->
                 <source type="image/webp" width="68" height="68"
                   srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x">
-                <!-- <source type="image/jpeg" width="80" height="80" media="(min-width: 768px)"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x"> -->
-                <img class="swiper__image" src="./img/reviews/anna-orlova.jpg" srcset="./img/reviews/anna-orlova@2x.jpg"
+                <img class="reviews__image" src="./img/reviews/anna-orlova.jpg" srcset="./img/reviews/anna-orlova@2x.jpg"
                   width="68" height="68" alt="Анна Орлова.">
               </picture>
               <h3>Анна Орлова</h3>
@@ -816,13 +805,9 @@
             </div>
             <div class="swiper-slide reviews__slide">
               <picture>
-                <!-- <source type="image/webp" width="80" height="80" media="(min-width: 768px)"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x"> -->
                 <source type="image/webp" width="68" height="68"
                   srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x">
-                <!-- <source type="image/jpeg" width="80" height="80" media="(min-width: 768px)"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x"> -->
-                <img class="swiper__image" src="./img/reviews/anna-orlova.jpg" srcset="./img/reviews/anna-orlova@2x.jpg"
+                <img class="reviews__image" src="./img/reviews/anna-orlova.jpg" srcset="./img/reviews/anna-orlova@2x.jpg"
                   width="68" height="68" alt="Анна Орлова.">
               </picture>
               <h3>Анна Орлова</h3>
@@ -831,13 +816,9 @@
             </div>
             <div class="swiper-slide reviews__slide">
               <picture>
-                <!-- <source type="image/webp" width="80" height="80" media="(min-width: 768px)"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x"> -->
                 <source type="image/webp" width="68" height="68"
                   srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x">
-                <!-- <source type="image/jpeg" width="80" height="80" media="(min-width: 768px)"
-                  srcset="./img/juri/anna-pavlova.webp 1x, ./img/juri/anna-pavlova@2x.webp 2x"> -->
-                <img class="swiper__image" src="./img/reviews/anna-orlova.jpg" srcset="./img/reviews/anna-orlova@2x.jpg"
+                <img class="reviews__image" src="./img/reviews/anna-orlova.jpg" srcset="./img/reviews/anna-orlova@2x.jpg"
                   width="68" height="68" alt="Анна Орлова.">
               </picture>
               <h3>Анна Орлова</h3>
@@ -916,7 +897,7 @@
 
 
   <footer class="footer" data-test="footer">
-    <img class="hero__logo logo" src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+    <img class="footer__logo logo" src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
     <nav class="footer__nav">
       <ul class="footer__list">
         <li class="footer__item">

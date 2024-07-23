@@ -36,17 +36,9 @@
   }
 }
 
-.price__wrapper {
+.price__dropping {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    // grid-template-columns: 95px 1fr 121px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // grid-template-columns: 471px 188px 1fr;
-  }
 }
 
 .price__dropping-panel {
