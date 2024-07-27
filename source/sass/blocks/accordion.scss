@@ -38,7 +38,7 @@
       gap: 65px;
 
       @media (min-width: $desktop-width) {
-        padding: 23px 0;
+        padding: 24px 0 21px;
       }
 
       br {
@@ -90,7 +90,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 0 225px 21px 0;
+    padding: 1px 225px 22px 0;
   }
 }
 

@@ -10,9 +10,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 103px;
-    width: 684px;
+    padding: 59px 101px 60px 103px;
     border-top: 1px solid  $button-border;
+    width: 683px;
   }
 }
 
@@ -63,7 +63,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    gap: 13px 120px;
+    gap: 13px 118px;
   }
 }
 
@@ -79,6 +79,10 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 5px;
   }
 }

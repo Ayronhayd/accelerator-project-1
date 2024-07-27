@@ -134,6 +134,7 @@
   gap: 35px;
   background-color: $bg-extra;
   text-align: center;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     gap: 40px;

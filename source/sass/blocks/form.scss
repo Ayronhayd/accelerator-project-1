@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 103px;
+    padding: 60px 103px 61px;
   }
 }
 
@@ -124,5 +124,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     padding: 26px 20px 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-width: 2px 1px 1px 2px;
   }
 }
