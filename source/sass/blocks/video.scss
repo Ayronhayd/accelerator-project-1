@@ -6,10 +6,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image:
-    image-set(url("../../img/about/video-mobil.webp") 1x type("image/webp"),
-    url("../../img/about/video-mobil@2x.webp") 2x type("image/webp"),
-    url("../../img/about/video-mobil.jpg") 1x type("image/jpeg"),
-    url("../../img/about/video-mobil@2x.jpg") 2x type("image/jpeg"));
+    image-set(url("../img/about/video-mobil.webp") 1x type("image/webp"),
+    url("../img/about/video-mobil@2x.webp") 2x type("image/webp"),
+    url("../img/about/video-mobil.jpg") 1x type("image/jpeg"),
+    url("../img/about/video-mobil@2x.jpg") 2x type("image/jpeg"));
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -18,10 +18,10 @@
     width: 270px;
     height: 170px;
     background-image:
-      image-set(url("../../img/about/video-tablet.webp") 1x type("image/webp"),
-      url("../../img/about/video-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/about/video-tablet.jpg") 1x type("image/jpeg"),
-      url("../../img/about/video-tablet@2x.jpg") 2x type("image/jpeg"));
+      image-set(url("../img/about/video-tablet.webp") 1x type("image/webp"),
+      url("../img/about/video-tablet@2x.webp") 2x type("image/webp"),
+      url("../img/about/video-tablet.jpg") 1x type("image/jpeg"),
+      url("../img/about/video-tablet@2x.jpg") 2x type("image/jpeg"));
   }
 
   @media (min-width: $desktop-width) {
@@ -30,10 +30,10 @@
     width: 360px;
     height: 230px;
     background-image:
-      image-set(url("../../img/about/video-desctop.webp") 1x type("image/webp"),
-      url("../../img/about/video-desctop@2x.webp") 2x type("image/webp"),
-      url("../../img/about/video-desctop.jpg") 1x type("image/jpeg"),
-      url("../../img/about/video-desctop@2x.jpg") 2x type("image/jpeg"));
+      image-set(url("../img/about/video-desctop.webp") 1x type("image/webp"),
+      url("../img/about/video-desctop@2x.webp") 2x type("image/webp"),
+      url("../img/about/video-desctop.jpg") 1x type("image/jpeg"),
+      url("../img/about/video-desctop@2x.jpg") 2x type("image/jpeg"));
   }
 }
 
