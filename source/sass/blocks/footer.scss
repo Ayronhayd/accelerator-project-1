@@ -6,17 +6,21 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 45px 45px 39px;
+    padding: 45px 45px 18px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 103px 35px;
+    padding: 40px 103px 30px;
   }
 }
 
 .footer__logo {
   margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .footer__list {
@@ -33,7 +37,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 18px 82px;
+    gap: 18px 81px;
+    margin: 0;
   }
 }
 
@@ -44,6 +49,11 @@
   color: $color-white;
   padding: 10px 0;
   border: 1px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 
   &:hover {
     border-bottom: 1px solid $color-white;

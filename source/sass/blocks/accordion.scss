@@ -34,8 +34,12 @@
       grid-template-columns: 1fr 40px;
       margin: 0;
       align-items: center;
-      padding: 23px 0;
+      padding: 24px 0 22px;
       gap: 65px;
+
+      @media (min-width: $desktop-width) {
+        padding: 23px 0;
+      }
 
       br {
         display: none;

@@ -1,24 +1,28 @@
 .features {
   background-color: $bg-extra;
-  padding: 40px 0;
+  padding: 40px 0 38px;
   margin: 0 auto;
   max-width: 1440px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 45px 60px;
+    padding: 61px 45px 59px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 103px 100px;
+    padding: 102px 103px 99px;
   }
 }
 
 .features__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
   }
 }
 
@@ -45,13 +49,13 @@
 }
 
 .features__item {
-  padding: 0 45px;
+  padding: 0 46px 0 45px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: 324px;
     padding: 0;
-    gap: 14px;
+    gap: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,6 +93,7 @@
 
   small {
     display: block;
+    margin-top: 1px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -108,7 +113,7 @@
   }
 
   h3 {
-    margin: 12px 0;
+    margin: 11px 0 13px;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
@@ -120,7 +125,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 10px;
+      margin: 0 0 8px;
       font-size: 22px;
       line-height: 22px;
     }
@@ -144,13 +149,13 @@
   background-color: $bg-supplementary;
   color: $color-white;
   text-align: center;
-  margin: 4px 0;
+  margin: 3px 0 5px;
   padding: 30px 50px 39px;
 
   @media (min-width: $tablet-width) {
-    margin: 9px auto;
+    margin: 9px auto 10px;
     width: 320px;
-    padding: 36px 41px 35px;
+    padding: 35px 41px;
     grid-column: 1/-1;
   }
 
@@ -172,7 +177,7 @@
     @media (min-width: $tablet-width) {
       font-size: 70px;
       line-height: 70px;
-      margin-bottom: 24px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: $desktop-width) {

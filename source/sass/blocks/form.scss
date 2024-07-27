@@ -29,7 +29,7 @@
     width: 440px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 33px;
+    gap: 33px 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,9 +78,15 @@
   line-height: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 5px 0 1px;
+    padding: 4px 0 1px;
     margin-bottom: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 0 2px;
+    margin-bottom: 2px;
+  }
+
 
   &::placeholder {
     font-family: inherit;

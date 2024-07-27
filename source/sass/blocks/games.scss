@@ -1,5 +1,5 @@
 .games {
-  padding: 26px 15px 25px;
+  padding: 25px 15px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
@@ -43,7 +43,7 @@
 
 .games__conteiner {
   color: $color-white;
-  padding-left: 50px;
+  padding-left: 49px;
 
   @media (min-width: $tablet-width) {
     padding-left: 10px;
@@ -137,6 +137,7 @@
   font-size: 16px;
   line-height: 20px;
   grid-column: 1/-1;
+  margin: 16px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
